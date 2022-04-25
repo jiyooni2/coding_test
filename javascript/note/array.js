@@ -162,3 +162,9 @@ const student = [
     .join(", ");
   console.log(result);
 }
+
+//get the last item of the array
+//slice, pop도 가능
+{
+  const arr = [1, 2, 3, 4];
+}
