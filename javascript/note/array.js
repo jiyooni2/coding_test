@@ -122,6 +122,11 @@ const student = [
 
   const result4 = student.map((student) => 5 * 2);
   console.log(result4);
+
+  //using index
+  const result5 = student.map(
+    (item, index) => item.score / student[index].score
+  );
 }
 
 //08.check if there is a student with the score lower than 50
