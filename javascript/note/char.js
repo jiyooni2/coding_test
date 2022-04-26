@@ -25,3 +25,11 @@
     .concat(arrB.filter((x) => !arrA.includes(x)));
   let union = [...arrA, ...arrB];
 }
+
+//split number into digits
+{
+  const input = "123456";
+
+  const a = input.split("");
+  console.log(a);
+}
