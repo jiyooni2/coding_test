@@ -33,3 +33,14 @@
   const a = input.split("");
   console.log(a);
 }
+
+{
+  console.log("with newline");
+  process.stdout.write("without newline");
+  console.log();
+}
+
+{
+  //string에서 특정 인덱스의 캐릭터를 바꾸려면, substring으로 쪼갠다음에 합쳐서 바꾸는 방법밖에 없음
+  //되도록 array로 저장할것!!
+}

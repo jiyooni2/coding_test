@@ -5,8 +5,10 @@
   array.pop();
   console.log("After pop", array);
 
+  //제거
   array.shift(0);
   console.log("After shift", array);
+  //삽입
   array.unshift();
   console.log("After unshift", array);
 
@@ -172,4 +174,9 @@ const student = [
 //slice, pop도 가능
 {
   const arr = [1, 2, 3, 4];
+}
+
+{
+  const array = Array(5).fill(2);
+  console.log(array);
 }
