@@ -180,3 +180,14 @@ const student = [
   const array = Array(5).fill(2);
   console.log(array);
 }
+
+//Swap
+{
+  const arr = [1, 2, 3, 4, 5];
+
+  [arr[1], arr[2]] = [arr[2], arr[1]];
+
+  //3개이상도 swap 가능
+
+  [arr[1], arr[2], arr[4]] = [arr[2], arr[4], arr[1]];
+}

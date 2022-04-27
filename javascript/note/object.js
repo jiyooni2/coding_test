@@ -40,3 +40,18 @@ const fruit2 = { color: "blue", size: "big" };
 //차례대로 할당한다고 생각 mixed={...fruit1, ...fruit2}
 const mixed = Object.assign({}, fruit1, fruit2);
 console.log(mixed.color, mixed.size);
+
+//Sort
+{
+  const array = [
+    { name: "A", age: 13 },
+    { name: "B", age: 14 },
+    { name: "C", age: 1 },
+  ];
+
+  array.sort((a, b) => {
+    return a.age - b.age;
+  });
+
+  console.log(array);
+}
