@@ -176,6 +176,7 @@ const student = [
   const arr = [1, 2, 3, 4];
 }
 
+//make 1-d array
 {
   const array = Array(5).fill(2);
   console.log(array);
@@ -190,4 +191,13 @@ const student = [
   //3개이상도 swap 가능
 
   [arr[1], arr[2], arr[4]] = [arr[2], arr[4], arr[1]];
+}
+
+//make 2d array
+{
+  //4*4
+  let array = Array.from(Array(4), () => new Array(4));
+
+  //4*2, 4가 1d 2가 2d
+  let array2 = Array.from(Array(4), () => new Array(2));
 }
