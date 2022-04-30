@@ -201,3 +201,7 @@ const student = [
   //4*2, 4가 1d 2가 2d
   let array2 = Array.from(Array(4), () => new Array(2));
 }
+
+{
+  //sort할 때 반드시 안에 함수 넣어주기!!!
+}
