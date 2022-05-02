@@ -24,9 +24,6 @@ rl.on("line", (line) => {
 });
 
 function getMax(N, input) {
-  let charList = new Set();
-  let arr = [];
-
   let maxLength = 0;
   for (let i = 0; i < N; i++) {
     maxLength = Math.max(input[i].length, maxLength);

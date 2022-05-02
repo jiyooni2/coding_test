@@ -54,4 +54,16 @@ console.log(mixed.color, mixed.size);
   });
 
   console.log(array);
+
+  //object를 sort하려면 list에 넣어서 해야함
+}
+
+{
+  const obj = { a: 123, b: 456 };
+  const sortable = [];
+  for (let key in obj) {
+    sortable.push(key, obj[key]);
+  }
+
+  sortable.sort((a, b) => a[1] - b[1]);
 }
