@@ -17,8 +17,10 @@ rl.on("line", (line) => {
     input.push(line.split(" ").map((value) => parseInt(value)));
   }
 }).on("close", () => {
-  N = 200000;
-  input = new Array(N).fill([0, 1]);
+  // N = 200000;
+  // for (let i = 0; i < N; i++) {
+  //   input.push([i, i + 200000]);
+  // }
 
   const result = func(N, input);
   console.log(result);
@@ -36,6 +38,12 @@ function func(N, input) {
 
   for (let i = 1; i < N; i++) {
     let canPush = false;
+    if (!exCanPush) {
+      if (input[i][0] === input[i - 1][0]) {
+        time.push(input[i][1]);
+        continue;
+      }
+    }
 
     for (let j = 0; j < time.length; j++) {
       if (time[j] <= input[i][0]) {
