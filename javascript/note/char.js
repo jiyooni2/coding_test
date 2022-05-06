@@ -50,3 +50,14 @@
   const a = "AAAbbCC";
   a.match(/[A-z]{3}/);
 }
+
+//use regex
+{
+  let str = "ABCDDEEFFFKKKKKLLLL";
+
+  //g : 전체 모든 문자열 변경
+  //i : 대소문자 무시
+  //2번 매칭되는 문자열 삭제
+  str = str.replace(/([A-Z])\1{1}/g, "");
+  console.log(str);
+}
