@@ -1,23 +1,15 @@
 import time
 
-
-price = int(input())
+n = int(input())
 count = 0
+
+coin_types = [500, 100, 50, 10]
+
 start_time = time.time()
 
-while(price > 0):
-    while(price >= 500):
-        count += 1
-        price -= 500
-    while(price >= 100):
-        count += 1
-        price -= 100
-    while(price >= 50):
-        count += 1
-        price -= 50
-    while(price >= 10):
-        count += 1
-        price -= 10
+for coin in coin_types:
+    count += n//coin  # // : 몫 return
+    n %= coin
 end_time = time.time()
 
 print(end_time-start_time)
