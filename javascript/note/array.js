@@ -205,3 +205,8 @@ const student = [
 {
   //sort할 때 반드시 안에 함수 넣어주기!!!
 }
+
+//make Array
+{
+  Array.from({ length: 10 }, (_, i) => i + 1);
+}
