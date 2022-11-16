@@ -31,4 +31,7 @@ const getCombinations = (array, selectNumber) => {
 };
 
 //4C3
-console.log(getCombinations([1, 2, 3, 4], 3));
+console.log(getCombinations([0, 1, 2, 3], 3));
+
+const arr = [1, 2, 3, 4];
+console.log(arr.reduce((prev, curr) => prev * curr, 1) - 1);
