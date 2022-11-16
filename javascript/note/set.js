@@ -24,4 +24,7 @@ Set
   set.delete(3);
   console.log(set.has(4));
   console.log(set);
+
+  //get size of set
+  console.log(set.size);
 }
