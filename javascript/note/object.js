@@ -67,3 +67,10 @@ console.log(mixed.color, mixed.size);
 
   sortable.sort((a, b) => a[1] - b[1]);
 }
+
+{
+  const obj = { a: 1, b: 2 };
+
+  //object to array
+  console.log(Object.entries(obj));
+}
