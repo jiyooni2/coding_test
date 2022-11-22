@@ -9,6 +9,7 @@ function solution(numbers) {
 
     for (let item of arr) {
       let str = "";
+
       for (let c of item) {
         str += c;
       }
