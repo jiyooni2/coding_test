@@ -1,11 +1,11 @@
-package JAVA.concept;
+package concept;
 
 import java.util.Arrays;
 import java.util.LinkedList;
 import java.util.Queue;
 import java.util.Scanner;
 
-public class bfs1 {
+public class Bfs1 {
   public static int[][] map = new int[200][200];
   public static int N;
   public static int M;

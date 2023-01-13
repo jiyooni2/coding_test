@@ -1,10 +1,10 @@
-package JAVA.concept;
+package concept;
 
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
-public class dfs1 {
+public class Dfs1 {
   static int[] dx = {-1, 1, 0, 0};
   static int[] dy = {0, 0, -1, 1};
   static int N;
@@ -18,8 +18,8 @@ public class dfs1 {
     while (sc.hasNextLine()) {
       String str = sc.nextLine();
       // List<Integer> arr =
-      //     new ArrayList<>(Arrays.asList(str.split("")))
-      //         .stream().map(el -> Integer.valueOf(el)).collect(Collectors.toList());
+      // new ArrayList<>(Arrays.asList(str.split("")))
+      // .stream().map(el -> Integer.valueOf(el)).collect(Collectors.toList());
       // map.add(arr);
       List<Integer> arr = new ArrayList<>();
       for (int k = 0; k < str.length(); k++) {
